@@ -1,0 +1,23 @@
+ <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+ <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+	<title>Slot Machine</title>
+	<link rel="stylesheet" type="text/css" href="style/ass1.css" />	
+	<script type="text/javascript" src="script/slots.js"></script>		
+</head>
+<body onLoad="spin();">
+	<div id="main">	
+		<div id="img_holder">
+			<img class ="slotImage" id = "slot1" src = "" >
+			<img class ="slotImage" id = "slot2" src = "" >
+			<img class ="slotImage" id = "slot3" src = "" >
+		</div>		
+		<div id="bottom">
+		<img class="bottom_img" src = "reset.png" onclick="location.reload();" >
+		<img class="bottom_img" src = "bottom.png" >	
+		<img class="bottom_img" src = "spin.png"  onclick="spin();">
+		</div>	
+	</div>
+	<p id="wins">You have won: 0 times and have taken 0 spins</p>
+</body>
+</html>

@@ -1,0 +1,36 @@
+.container{
+	border: 1px solid #333;
+	width:400px;
+	margin:auto;
+}
+
+#navigation{
+	display:inline;
+	line-height:30px;
+	vertical-align:top;
+}
+
+#nav-container{
+	margin:auto;
+	width:170px;
+}
+
+#navigation a{
+	padding:2px;
+	font-weight:bold;
+	border:1px solid #fff;
+	cursor:pointer;
+}
+
+#navigation .active{
+	border:1px solid #999;
+}
+
+#left-arrow{
+	display:inline;
+}
+
+#right-arrow{
+	display:inline;
+}
+

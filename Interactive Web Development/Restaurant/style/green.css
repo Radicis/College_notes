@@ -1,0 +1,474 @@
+/*
+CSS Document 
+Green.css
+Adam Lloyd
+Restaurant Website Project
+Web Development Fundamentals
+DWEB 1
+*/
+
+/*Make vertical scroll bar permanent to prevent page shifting to left on longer pages with scroll bar */
+
+html{
+	overflow-y :scroll ;
+}
+
+body{	
+	color:#DBDBDB;
+	font-family: Arial, sans-serif; 
+	padding-top:15px;	
+	background: #121212; 
+	background-image:url(../images/bg.jpg);
+	background-size: cover;
+	background-position:bottom left;
+	background-attachment:fixed;	
+}
+
+hr{
+	margin:0px;
+	margin-top:10px;
+	-webkit-box-shadow: 0px 0px 5px #999;
+	-moz-box-shadow:    0px 0px 5px #999;
+	box-shadow:         0px 0px 5px #999;
+	border:0px;
+	height:2px;
+
+}
+
+h3, h2, h1{	
+	margin:5px;
+}
+
+a{
+	text-decoration:none;
+	color:#03B703;
+	outline:none;
+}
+
+a:hover{
+	color:#CC0000;
+}
+
+.left{
+	float:left;
+}
+.right{
+	float:right;
+}
+
+
+/* Main wrapper div styling */
+
+
+#glow{
+	width:945px;
+	margin:0 auto;
+	-webkit-box-shadow: 0px 0px 15px rgba(103, 255, 85, 0.75);
+	-moz-box-shadow:    0px 0px 15px rgba(103, 255, 85, 0.75);
+	box-shadow:         0px 0px 15px #999;
+	border-radius:10px;
+}
+
+#wrapper{
+	width:900px;
+	margin:0 auto;	
+	background:#121212;
+	border:3px groove #004203;
+	padding:20px;
+	-webkit-box-shadow: 0px 0px 15px rgba(103, 255, 85, 0.75);
+	-moz-box-shadow:    0px 0px 15px rgba(103, 255, 85, 0.75);
+	box-shadow:   inset      0px 0px 10px #999;
+	border-radius:10px;
+	opacity:0.9;
+}
+
+
+/* Header and header content styling */
+
+#header{	
+	padding:0px;
+	height:auto;	
+}
+
+	/* Nutritional Information table */
+
+	#nutrition {
+		font-size:4px;
+	}
+	.nutritionInfo{
+		color:#999;
+		float:left;
+	}
+	.nutritionInfo td{
+		padding:0px;
+	}
+	.nutritionInfo h2{
+		margin:0px;
+		padding:0px;
+		font-size:16px;
+		color:#7D7D7D;
+	}
+	.nutritionTable {
+		margin:2px;
+		padding:0px;
+		border:0px;
+		float:left;
+	}
+	.nutritionTable td{
+		border-bottom :1px solid #999;
+		padding:0px;
+	}
+	.nutritionTable tr{
+		height:6px;
+	}
+	
+	/*CORPA-NET LOGO */
+	
+	#logo{
+		float:left;
+		margin-left:30px;		
+	}
+	#logo h1{
+		margin:0px;
+		font-size:50px;
+		margin-top:-10px;
+		margin-bottom:-5px;
+		color:#ccc;
+	}
+	#logo span{
+		border-top:3px double #ccc;
+		font-size:10px;
+		margin-left:70px;
+		
+	}
+	
+	/* warning box table */
+
+	.warning{
+		float:right;
+		font-size:8px;
+		width:180px;
+		border:1px solid #525252;
+		padding:2px;
+	}
+	.warning td{
+		border:1px solid #525252;
+		font-size:6px;
+	}
+	.warning-symbol{
+		font-size:20px;
+		padding:5px;
+	}
+	
+	/* Main Nav Menu Styling */
+	
+	#main-nav{
+		clear:both;
+		height:110px;
+		margin-left:-45px;
+	}
+	#main-nav ul li{
+		float:left;
+		list-style:none;	
+		width:155px;
+		height:80px;
+		padding:13px;		
+	}
+	
+	/* Menu button Square Boxes */		
+	
+	.square{
+		width:149px;
+		height:80px;
+		display:block;
+		color:#004203;
+		text-decoration:none;		
+		border:3px groove #004203;
+		font-weight:bold;
+		background: #2b2b2b; /* Old browsers */
+		background: -moz-linear-gradient(top,  #2b2b2b 0%, #000000 100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#2b2b2b), color-stop(100%,#000000)); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(top,  #2b2b2b 0%,#000000 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(top,  #2b2b2b 0%,#000000 100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(top,  #2b2b2b 0%,#000000 100%); /* IE10+ */
+		background: linear-gradient(to bottom,  #2b2b2b 0%,#000000 100%); /* W3C */		
+		-webkit-box-shadow: 0px 0px 10px rgba(103, 255, 85, 0.75);
+		-moz-box-shadow:    0px 0px 10px rgba(103, 255, 85, 0.75);
+		box-shadow:         0px 0px 5px #2EFF00;
+		border-radius:15px;
+	}
+
+	.square:hover{
+		color:#f3f3f3;
+		border:3px groove #004203;
+		-webkit-box-shadow: 0px 0px 10px rgba(103, 255, 85, 0.75);
+		-moz-box-shadow:    0px 0px 10px rgba(103, 255, 85, 0.75);
+		box-shadow:         0px 0px 10px #d60000;
+		
+	}
+	
+	.square h1{
+		margin-top:-18px;
+		margin-left:85px;
+		margin-bottom:-155px;
+		padding:0px;
+		font-size:100px;
+	}
+	
+		
+	/* Styling for the @ sign button as the character needed different positioning */	
+	
+	#atsign{
+		margin-top:-10px;
+		margin-left:75px;
+		margin-bottom:-127px;
+		padding:0px;
+		font-size:70px;
+	}
+		
+	/* Menu button text span styling */
+	.square span:before{
+		content:"#";
+		color:#999;
+	}
+	.square span{
+		position:relative;
+		top:110px;
+		left:5px;
+		color:#474747;
+		padding-top:4px;
+		font-size:22px;
+	}
+
+/* Content Section Styling */
+
+
+	/* Obey Text flash style */
+
+	#obey{	
+		float:left;
+		font-size:285px;
+		color:#8F0101;
+		margin-top:20px;
+		margin-bottom:-350px;
+	}
+
+#content{	
+	font-size:14px;
+	min-height:600px;
+	background-image:url(../images/recycle.png);
+	background-position:bottom;
+	background-repeat:no-repeat;
+}
+
+	/* 3 column layout styling */
+	
+	.col1{
+		width:200px;
+		float:left;
+		padding:10px;
+		font-size:13px;
+	}
+	.col1 h2{
+		text-align:center;
+	}
+	.everything{
+		font-weight:bold;
+		color:#03B703;
+	}
+
+	.col2{
+		width:450px;
+		padding:10px;
+		margin-left:auto;
+		margin-right:auto;
+		color:#DBDBDB;	
+		
+	}
+	.col2 h2{
+		text-align:center;
+	}
+	.col2 p{
+		margin-bottom:20px;
+	}
+
+	.col3{
+		width:200px;
+		float:right;
+		padding:10px;
+			font-size:13px;
+	}
+
+	.col3 h2{
+		text-align:center;
+	}
+
+	/*Review Blockquote styling */
+
+	blockquote{
+		margin:0px;
+		color: #999;
+		border-left: 1px dashed #ccc;
+		padding-left:10px;
+		padding-top:10px;
+		border-bottom:1px dashed #ccc;
+		border-top:1px dashed #ccc;
+		font-variant:small-caps;
+		margin-bottom:20px;
+		font-size:13px;	
+	}
+
+
+	.col2 blockquote{
+		border-left:0;
+	}
+
+
+	blockquote:first-line {
+		font-variant: small-caps;
+		color: #f3f3f3;
+	}
+		
+	blockquote:first-letter {
+		float: left;
+		margin: .2em .3em .1em 0;
+		font-family: "Monotype Corsiva", "Apple Chancery", fantasy;
+		font-size: 220%;
+		font-weight: bold; 
+	}
+
+	.stars{
+		font-variant: small-caps;
+		color: #f3f3f3;
+	}
+
+
+	/* Menu and DL styling */
+	
+	
+	.left-third{
+		float:left;
+		width:300px;
+	}
+	
+	.left-third h2{
+		text-align:center;
+	}
+
+	 dt 	 
+	 { 
+		float: left; 
+		clear: left; 
+		text-align: right; 
+		font-weight: bold; 
+		color: #03B703; 
+		padding:5px;
+	} 
+	 dt:after { 
+		content: " :";
+		color:#999;
+	} 
+	 dd { 
+		padding:5px;
+		 
+	}
+
+
+	/* Feedback form Styling */
+
+	.feedbackForm{
+		height:700px;
+		width:550px;
+		margin-left:160px;
+		padding:10px;	
+	}
+	.feedbackForm label{
+		font-weight:bold;
+		color:#ccc;
+	}
+	.feedbackForm h2{
+		margin:5px;
+	}
+	.feedbackForm fieldset{
+		margin:5px;
+		border-radius:5px;
+		border:1px dashed #999;
+	}
+	.feedbackForm legend{
+		font-size:14px;
+		color:#03B703;
+	}
+	
+    /* Required Field Star */
+	
+		.star{
+			color:#ff0000;
+		}
+	.submitButton
+	{
+		-webkit-box-shadow: 1px 1px 1px #000;
+		-moz-box-shadow:    1px 1px 1px #000;
+		box-shadow:         1px 1px 1px #000;
+		border: 1px solid #999;
+		margin-right:5px;
+		height:35px;
+		width:80px;
+		background: #eeeeee; /* Old browsers */
+		background: -moz-linear-gradient(top,  #eeeeee 0%, #cccccc 100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#eeeeee), color-stop(100%,#cccccc)); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(top,  #eeeeee 0%,#cccccc 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(top,  #eeeeee 0%,#cccccc 100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(top,  #eeeeee 0%,#cccccc 100%); /* IE10+ */
+		background: linear-gradient(to bottom,  #eeeeee 0%,#cccccc 100%); /* W3C */
+		border-radius:5px;
+		text-align:right;	
+		float:right;
+	}
+	.submitButton:hover
+	{
+		border:1px solid #2EFF00;
+		height:35px;
+		width:80px;
+		text-align:right;	
+		float:right;
+	}
+	.buttonSuper{
+		color:#ff0000;
+		font-size:10px;
+		float:left;
+	}
+	
+
+	/* Google map style */
+
+	#mapC{
+		width:400px;
+		height:300px;
+		margin:20px;
+		border: 6px double #999;
+		background-color:#f6f6f6;
+		-webkit-border-radius: 10px;
+		-moz-border-radius: 10px;
+		border-radius: 10px;
+		float:left;
+	}
+	
+
+
+/*Footer Copyright text */
+
+	.copyright{
+		clear:both;
+		font-size:8px;		
+		margin:0 auto;
+		margin-top:20px;
+		text-align:center;
+	}
+	
+/*Twitter Widget style overrides*/
+
+.twitter-timeline{
+	height:400px;
+	margin-top:10px;
+}
+	

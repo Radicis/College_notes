@@ -1,0 +1,17 @@
+#img_holder{
+	height:220px;
+	width:220px;
+}
+img
+{
+	position:absolute;
+	left:10px;
+	top:5px;
+	display:inline;
+}
+.topping{
+	display:none;
+}
+
+
+

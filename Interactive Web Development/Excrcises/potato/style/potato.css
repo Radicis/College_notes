@@ -1,0 +1,45 @@
+
+#main{	
+	margin:auto;
+	width:550px;
+	height:570px;
+	background-image:url(../head_body.png);
+	background-repeat:no-repeat;
+	background-position:center;		
+}
+
+.head_img{
+	position:relative;
+}
+
+#hat{
+	margin-top:20px;
+	margin-left:162px;
+}
+#eyes{
+	margin-left:195px;
+	margin-bottom:-50px;
+}
+#nose{
+	margin-left:210px;
+	margin-bottom:-15px;	
+}
+#feet{
+	margin-top:130px;
+	margin-left:93px;
+	margin-bottom:10px;
+}
+#arm-left{
+	margin-top:-180px;
+	margin-left:60px;
+}
+#arm-right{
+	margin-top:-70px;
+	margin-left:-10px;
+	margin-bottom:-260px;
+	float:left;
+}
+#buttons{
+	clear:both;
+}
+

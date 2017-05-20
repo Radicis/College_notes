@@ -1,0 +1,25 @@
+ <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+ <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+	<title>Potato Head</title>
+	<link rel="stylesheet" type="text/css" href="style/potato.css" />	
+	<script type="text/javascript" src="script/potato.js"></script>		
+</head>
+<body onLoad="load();">
+	<div id="main">	
+		<div id="img_holder">
+			<img class ="head_img" id = "hat" src = "hat.png" >
+			<img class ="head_img" id = "eyes" src = "eyes.png" >
+			<img class ="head_img" id = "nose" src = "nose1.png" >
+			<img id = "arm-left" src= "arm-left.png">
+			<img id = "arm-right" src= "arm-right.png">
+			<img id = "feet" src="feet.png">
+		</div>		
+		<div id="buttons">
+		<button class="bottom_img" onclick="location.reload();" >Eyes</button>
+		<button class="bottom_img" onclick="swap('nose');"> Nose </button>	
+		<button class="bottom_img" onclick="spin();">Mouth</button>
+		</div>	
+	</div>
+</body>
+</html>

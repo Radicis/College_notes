@@ -1,0 +1,131 @@
+<!DOCTYPE html> 
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>CORPA-NET Food Distribution Network</title>
+	<link rel="stylesheet" type="text/css" href="style/green.css" />
+	<link rel="icon" href="images/favicon.png" type="image/x-icon">
+	<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyAqqbY0BJ9hllSQlV0gIIDu_yjB6NapIr0&sensor=false"></script>
+	<script type="text/javascript" src="script/green.js"></script>	
+</head>
+<body onLoad="obey();load_map();">
+<div id="glow">
+	<div id="wrapper">
+		<div id="header">
+			<div id="nutrition">
+					<table class="nutritionInfo">
+						<tr><td><h2>Nutrition Facts</h2></td></tr>
+						<tr><td>Based on Serving Size (300g)</td></tr>
+						<tr><td><b>Calories</b> 400</td></tr>
+						<tr><td>Calories from Fat 260</td></tr>
+						<tr><td><small>*Percent Daily Values are based on a 2,000 calorie diet.</small></td></tr>
+					</table>
+					
+					<table class="nutritionTable">
+						<tr><td><small>Amount/Serving</small></td><td><small>% Daily Value*</small></td></tr>
+						<tr><td><b>Total Fat</b> 58g</td><td>54%</td></tr>
+						<tr><td>Saturated Fat 4g</td><td>20%</td></tr>
+						<tr ><td colspan="2">Trans Fat 0g</td></tr>
+						<tr><td><b>Sodium</b> 55mg</td><td>5%</td></tr>
+						<tr><td>Vitamin A 0%</td><td>Vitamin C 0%</td></tr>
+					</table>
+					
+					<table class="nutritionTable">
+						<tr><td><small>Amount/Serving</small></td><td><small>% Daily Value*</small></td></tr>
+						<tr><td><b>Total Carbohydrate</b> 116g</td><td>25%</td></tr>
+						<tr><td>Dietary Fiber 2g</td><td>8%</td></tr>
+						<tr ><td colspan="2">Sugars 5g</td></tr>
+						<tr><td><b>Protein</b> 52g</td><td>2%</td></tr>	
+						
+						<tr><td>Calcium 4%</td><td>Iron 4%</td></tr>
+					</table>	
+			</div>
+			
+			<div id="logo">
+				<h1>:: CORPA-NET ::</h1>
+				<span>- Your Global Food Destribution Network since 2184 -</span>
+			</div>
+			
+			<table class="warning">
+				<tr>
+					<th colspan="2"><b>WARNING!</b></th>
+				</tr>
+				<tr>
+					<td><span class="warning-symbol">!</span></td>
+					<td>Prepared in a factory that handles human. 
+						May contain traces of human.
+						Please refer to the allergy information section of our menu for more details.
+						Nom nom People.
+					</td>
+				</tr>
+			</table>	
+
+			<div id="main-nav">
+				<ul>
+					<li><a class="square" href="index.htm"><h1>?</h1><span>Home</span></a></li>
+					<li><a class="square" href="reviews.htm"><h1>*</h1><span>Reviews</span></a></li>
+					<li><a class="square" href="menu.htm"><h1>&yen;</h1><span>Menu</span></a></li>
+					<li><a class="square" href="feedback.htm"><h1>+</h1><span>Feedback</span></a></li>
+					<li><a class="square" href="contact.htm"><h1 id="atsign">@</h1><span>Contact</span></a></li>
+				</ul>
+			</div>
+			<hr class="header-bottom" />
+		</div>
+		<div id="content">
+				<div class="main-content">
+					<span id="obey"></span>					
+		
+					<div class="col1">
+						<h2>WE LOVE YOU</h2>
+						<hr/>
+						<p>At CORPA-NET we appreciate your unquestioning loyalty and obedience.</p>
+						<p>
+						If you wish to contact us you can fill in the form on the <a href="feedback.htm">Feedback</a> 
+						page or ask one of our friendly and helpful guards at your local food dispensary for a feedback form.
+						</p>
+						
+
+					</div>
+					<div class="col3">
+						<h2>:: Stay Connected ::</h2>
+						<hr/>
+						<a class="twitter-timeline" data-dnt="true" href="https://twitter.com/CORPANET"  data-widget-id="402946485072826369">Tweets by @CORPANET</a>
+						<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+					</div>					
+					<div class="col2">
+						<h2>CORPA-NET contact information</h2>
+						<hr/>	
+						<p class="left">
+							<b>CORPA-NET Food Distribution</b><br/>
+							District 1<br/>
+							Grand Palace<br/>
+							China<br/>
+							#0000001
+						</p>
+						<p class="right">
+							<b>Tel</b>: 1800-OBEY<br/>
+							<b>Fax</b>: 1890-OBEY<br/>
+							<b>Email</b>: <a href="mailto:info@corpa-net.cn">info@corpa-net.cn</a><br/>
+							<b>Web</b>: <a href="www.corpa.net/food">www.corpa.net/food</a>
+						</p>
+						<p class="right">
+							Opening Hours: 24/7 365 Days a Year
+						</p>
+						
+						<div id="mapC"></div>							
+						
+					</div>
+				</div>
+		</div>
+	</div>
+</div>	
+<div class="copyright">
+	<p>Content Designed by <a href="mailto:adam.lloyd@mycit.ie">Everything is OK</a> 2184</p>
+	<p>
+	<a href="http://jigsaw.w3.org/css-validator/check/referer">
+		<img style="border:0;width:88px;height:31px" src="http://jigsaw.w3.org/css-validator/images/vcss-blue" alt="Valid CSS!" />
+    </a>
+	</p>
+</div>
+</body>
+</html>

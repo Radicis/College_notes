@@ -1,0 +1,19 @@
+
+#container{
+  margin:Auto;
+  width:900px;
+  height:500px;
+}
+
+#top{
+	width:100%;
+	height:150px;
+}
+
+#left{
+	float:left;
+	background-color:#ccc;
+	width:200px;
+	height:350px;
+}
+

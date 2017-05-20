@@ -1,0 +1,31 @@
+ <!DOCTYPE html>
+ <html lang="en" >
+<head>
+	<title>Pizza Time</title>
+	<link rel="stylesheet" type="text/css" href="style/pizza.css" />	
+	<script type="text/javascript" src="script/pizza.js"></script>		
+</head>
+<body>
+	<div id="main">	
+		<div id="img_holder">
+			<img src="pizza-base.png" width="200" height="200"  alt="pizza-base" id="pizza-bases"/>
+			<img  class="topping" src="anchovies.png" width="200" height="200"  alt="anchovies" id="anchovies"/>
+			<img class="topping" src="cheese.png" width="200" height="200"  alt="cheese" id="cheese"/>
+			<img class="topping" src="olives.png" width="200" height="200"  alt="olives" id="olives"/>
+			<img class="topping" src="onions.png" width="200" height="200"  alt="onions" id="onions"/>
+			<img class="topping" src="salami.png" width="200" height="200"  alt="salami" id="salami"/>
+			<img class="topping" src="peppers.png" width="200" height="200"  alt="peppers" id="peppers"/>
+		</div>		
+		<div id="buttons">
+			<form name="orderForm" id="orderForm" onsubmit="order();">
+				<input type="checkbox" id="anchovy-check" name="anchovies" value="anchovies" onclick="show(this.name);">Anchovies
+				<input type="checkbox" id="cheese-check" name="cheese" value="cheese" onclick="show(this.name);">Cheese
+				<input type="checkbox" id="olives-check" name="olives" value="olives" onclick="show(this.name);">Olives
+				<input type="checkbox" id="onions-check" name="onions" value="onions" onclick="show(this.name);">Onions
+				<input type="checkbox" id="salami-check" name="salami" value="salami" onclick="show(this.name);">Salami
+				<input type="checkbox" id="peppers-check" name="peppers" value="peppers" onclick="show(this.name);">Peppers				
+			</form>			
+		</div>	
+	</div>
+</body>
+</html>

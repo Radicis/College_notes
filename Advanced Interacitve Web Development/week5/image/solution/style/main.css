@@ -1,0 +1,31 @@
+#displayClose a
+{
+color: black;
+}
+#displayClose
+{
+margin-top: 20px;
+font-family: helvetica,sans-serif;
+}
+
+#displayInner
+{
+position: absolute;
+margin-top: 50px;
+top: 10px;
+left: 100px;
+background: white;
+border: 2px solid black;
+text-align: center;
+padding: 20px;
+}
+
+#displayOuter
+{
+position: fixed;
+top: 0px;left: 0px;
+width: 100%;
+height: 100%;
+background:rgba(100,100,100,0.5);
+display: none;
+}

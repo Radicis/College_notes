@@ -1,0 +1,16 @@
+
+img
+{
+	position:absolute;
+	left:10px;
+	top:40px;
+	display:inline;
+}
+
+.topping{
+	display:none;
+}
+#buttons{
+	clear:both;
+}
+

@@ -1,0 +1,39 @@
+
+
+.slotImage{
+	width:90px;
+	padding:4px;
+	height:100px;	
+	border-left:1px solid #999;
+}
+
+#bottom{
+	margin-top:88px;	
+	float:left;
+	margin-left:3px;
+}
+
+.bottom_img{	
+	margin-right:-2px;
+	margin-left:-2px;
+	border:0;
+}
+#img_holder{
+	float:left;
+	margin-top:130px;
+	margin-left:50px;
+}
+
+#main{	
+	margin:auto;
+	width:408px;
+	height:407px;
+	background-image:url(../machine.png);
+	border:5px groove #999;
+}
+
+#wins{
+	clear:left;
+	margin:auto;
+	width:300px;
+}

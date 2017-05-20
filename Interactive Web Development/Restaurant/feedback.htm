@@ -1,0 +1,166 @@
+<!DOCTYPE html> 
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>CORPA-NET Food Distribution Network</title>
+	<link rel="stylesheet" type="text/css" href="style/green.css" />
+	<link rel="icon" href="images/favicon.png" type="image/x-icon">
+	<script type="text/javascript" src="script/green.js"></script>
+</head>
+<body onLoad="obey();">
+<div id="glow">
+	<div id="wrapper">
+		<div id="header">
+			<div id="nutrition">
+					<table class="nutritionInfo">
+						<tr><td><h2>Nutrition Facts</h2></td></tr>
+						<tr><td>Based on Serving Size (300g)</td></tr>
+						<tr><td><b>Calories</b> 400</td></tr>
+						<tr><td>Calories from Fat 260</td></tr>
+						<tr><td><small>*Percent Daily Values are based on a 2,000 calorie diet.</small></td></tr>
+					</table>
+					
+					<table class="nutritionTable">
+						<tr><td><small>Amount/Serving</small></td><td><small>% Daily Value*</small></td></tr>
+						<tr><td><b>Total Fat</b> 58g</td><td>54%</td></tr>
+						<tr><td>Saturated Fat 4g</td><td>20%</td></tr>
+						<tr ><td colspan="2">Trans Fat 0g</td></tr>
+						<tr><td><b>Sodium</b> 55mg</td><td>5%</td></tr>
+						<tr><td>Vitamin A 0%</td><td>Vitamin C 0%</td></tr>
+					</table>
+					
+					<table class="nutritionTable">
+						<tr><td><small>Amount/Serving</small></td><td><small>% Daily Value*</small></td></tr>
+						<tr><td><b>Total Carbohydrate</b> 116g</td><td>25%</td></tr>
+						<tr><td>Dietary Fiber 2g</td><td>8%</td></tr>
+						<tr ><td colspan="2">Sugars 5g</td></tr>
+						<tr><td><b>Protein</b> 52g</td><td>2%</td></tr>	
+						
+						<tr><td>Calcium 4%</td><td>Iron 4%</td></tr>
+					</table>	
+			</div>
+			<div id="logo">
+				<h1>:: CORPA-NET ::</h1>
+				<span>- Your Global Food Destribution Network since 2184 -</span>
+			</div>
+			<table class="warning">
+				<tr>
+					<th colspan="2"><b>WARNING!</b></th>
+				</tr>
+				<tr>
+					<td><span class="warning-symbol">!</span></td>
+					<td>Prepared in a factory that handles human. 
+						May contain traces of human.
+						Please refer to the allergy information section of our menu for more details.
+						Nom nom People.
+					</td>
+				</tr>
+			</table>	
+
+			<div id="main-nav">
+				<ul>
+					<li><a class="square" href="index.htm"><h1>?</h1><span>Home</span></a></li>
+					<li><a class="square" href="reviews.htm"><h1>*</h1><span>Reviews</span></a></li>
+					<li><a class="square" href="menu.htm"><h1>&yen;</h1><span>Menu</span></a></li>
+					<li><a class="square" href="feedback.htm"><h1>+</h1><span>Feedback</span></a></li>
+					<li><a class="square" href="contact.htm"><h1 id="atsign">@</h1><span>Contact</span></a></li>
+				</ul>
+			</div>
+			<hr class="header-bottom" />
+		</div>
+		<div id="content">
+			<div class="main-content">
+				<span id="obey"></span>			
+				<form method="post" action="foo.php" class="feedbackForm">
+					<h2>Feedback Form</h2>	
+					<fieldset>
+						<legend>Personal Details</legend>
+						<p>
+							<label>Citizen Number: </label>
+							<input type="text" name="fullName" required placeholder="Enter your name..">
+							<span class="star">*</span>
+						</p>
+						<p>
+							<label>Habitation Sector: </label>
+							<input type="text"  name="address" placeholder="Enter your address..">
+						</p>
+						<p>
+							<label>Date of Visit: </label>
+							<input type="date" name="dob" required placeholder="DD/MM/YYYY">
+							<span class="star">*</span>
+						</p>
+						<p>
+							<label>CORPA-NET Password: </label>
+							<input type="password" name="userPass" required >
+							<span class="star">*</span>
+						</p>
+						</fieldset>
+						<fieldset>
+							<legend>Food Consumption Details</legend>
+							<p>
+								<label>Favorite Dish: </label>
+								<select name="food">
+									<option value="null">Select a dish..</option>
+									<optgroup label="Appeiteisers">
+										<option value="1">Dish 1</option>
+										<option value="2">Dish 2</option>
+										<option value="3">Dish 3</option>
+										<option value="4">Dish 4</option>
+									</optgroup>
+									<optgroup label="Main Courses">	
+										<option value="1">Dish 1</option>
+										<option value="2">Dish 2</option>
+										<option value="3">Dish 3</option>
+										<option value="4">Dish 4</option>
+									</optgroup>
+								</select>
+							</p>							
+							<p>
+								<label>Type of Visit : </label>
+								<input type="radio" name="type" value="Work">Work
+								<input type="radio" name="type" value="Work">Work
+								<input type="radio" name="type" value="Work">Work
+								<input type="radio" name="type" value="Work">Work	
+						    </p>
+							<p>
+								<label>Your mood (Pick 1) : </label>
+								<input type="radio" name="MoodH" value="Happy">Happy
+								<input type="radio" name="MoodS" value="Sad">Content
+								<input type="radio" name="MoodA" value="displeased">Displeased
+								<input type="radio" name="MoodA" value="Angry">Angry
+							</p>
+							<p>
+								<label>Rate your Global Overlords</label>
+								<input type="radio" name="rate" value="1">1
+								<input type="radio" name="rate" value="2">2
+								<input type="radio" name="rate" value="3">3
+								<input type="radio" name="rate" value="4">4
+								<input type="radio" name="rate" value="5">5								
+							</p>
+						</fieldset>
+						<fieldset>
+							<legend>Leave your review</legend>	
+							<p>
+								<textarea rows="10" cols="60" name="comments" placeholder="Type anything else you wish to add here.." ></textarea>
+							</p>
+							<p>
+						</fieldset>
+						<p>	
+							<button class="submitButton" type="submit" ><span class="buttonSuper">Hit Me!</span>Submit</button>
+							<button class="submitButton" type="reset" ><span class="buttonSuper">Hit Me!</span>Reset</button>
+						</p>
+						</form>				
+					</div>
+				</div>
+		</div>
+</div>	
+<div class="copyright">
+	<p>Content Designed by <a href="mailto:adam.lloyd@mycit.ie">Everything is OK</a> 2184</p>
+	<p>
+	<a href="http://jigsaw.w3.org/css-validator/check/referer">
+		<img style="border:0;width:88px;height:31px" src="http://jigsaw.w3.org/css-validator/images/vcss-blue" alt="Valid CSS!" />
+    </a>
+	</p>
+</div>
+</body>
+</html>

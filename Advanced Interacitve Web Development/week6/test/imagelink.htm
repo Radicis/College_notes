@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<link rel="stylesheet" href="style/main.css" />
+<title>Image Lab</title>
+</head>
+
+<body>
+<div id="main">
+	<canvas id="myCanvas" width="500" height="500"></canvas>
+	<div id="controls">		
+		Stroke: <select id="strokeSelect">
+			<option value="black">Black</option>
+			<option value="red">Red</option>
+			<option value="blue">Blue</option>
+		</select>
+		<select id="lineSelect">
+			<option value="1">1px</option>
+			<option value="5">5px</option>
+			<option value="10">10px</option>
+		</select>
+		Fill: <select id="fillSelect">
+			<option value="black">Black</option>
+			<option value="red">Red</option>
+			<option value="blue">Blue</option>
+		</select>
+		<br />
+		<button id="clearbutton">Clear</button>
+		<button id="saveButton">Download</button>
+	</div>	
+</div>
+
+
+
+<script src="js/main.js"></script>
+</body></html>

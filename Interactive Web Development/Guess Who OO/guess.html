@@ -1,0 +1,53 @@
+ <!DOCTYPE html>
+ <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+	<title>Guess Who!</title>
+	<link rel="stylesheet" type="text/css" href="style/guess.css" />
+	<script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
+	<script type="text/javascript" src="script/guess.js"></script>		
+</head>
+<body onLoad="loadFaces();">
+<div id="container">
+	<div id="header">
+		<h1>Guess Who!</h1>
+		<a onClick="location.reload();" >Reset</a> |  -> <a id="answer" onClick="answer();" >Give Answer</a>
+	</div>	
+	<div id="game-main">
+		<div id="face-frame">
+			<a class="face"><img src=" " onClick="click_face(this.title)"; id="face0" alt="" title="" /><div class="faceName" id="name0"></div></a>
+			<a class="face"><img src=" " onClick="click_face(this.title)"; id="face1" alt="" title="" /><div class="faceName" id="name1"></div></a>
+			<a class="face"><img src=" " onClick="click_face(this.title)"; id="face2" alt="" title="" /><div class="faceName" id="name2"></div></a>
+			<a class="face"><img src=" " onClick="click_face(this.title)"; id="face3" alt="" title="" /><div class="faceName"id="name3"></div></a>
+			<a class="face"><img src=" " onClick="click_face(this.title)"; id="face4" alt="" title="" /><div class="faceName" id="name4"></div></a>
+			<a class="face"><img src=" " onClick="click_face(this.title)"; id="face5" alt="" title="" /><div class="faceName" id="name5"></div></a>
+			<a class="face"><img src=" " onClick="click_face(this.title)"; id="face6" alt="" title="" /><div class="faceName" id="name6"></div></a>
+			<a class="face"><img src=" " onClick="click_face(this.title)"; id="face7" alt="" title="" /><div class="faceName" id="name7"></div></a>
+			<a class="face"><img src=" " onClick="click_face(this.title)"; id="face8" alt="" title="" /><div class="faceName" id="name8"></div></a>
+			<a class="face"><img src=" " onClick="click_face(this.title)"; id="face9" alt="" title="" /><div class="faceName" id="name9"></div></a>
+			<a class="face"><img src=" " onClick="click_face(this.title)"; id="face10" alt="" title="" /><div class="faceName" id="name10"></div></a>
+			<a class="face"><img src=" " onClick="click_face(this.title)"; id="face11" alt="" title="" /><div class="faceName" id="name11"></div></a>
+			<a class="face"><img src=" " onClick="click_face(this.title)"; id="face12" alt="" title="" /><div class="faceName" id="name12"></div></a>
+			<a class="face"><img src=" " onClick="click_face(this.title)"; id="face13" alt="" title="" /><div class="faceName" id="name13"></div></a>			
+			<a class="face"><img src=" " onClick="click_face(this.title)"; id="face14" alt="" title="" /><div class="faceName" id="name14"></div></a>			
+		</div>
+		<div class="answer-frame">
+			<a id="white" onClick="hideFaces('white')"; >Are they White?</a>
+			<a id="black"  onClick="hideFaces('black')"; >Are they Black?</a>
+			<a id="asian" onClick="hideFaces('asian')"; >Are they asian?</a>
+			<a id="brown" onClick="hideFaces('brown')"; >Do they have brown hair?</a>
+			<a id="blonde" onClick="hideFaces('blonde')"; >Do they have blonde hair?</a>
+			<a id="bald" onClick="hideFaces('bald')"; >Are they bald?</a>
+			<a id="man" onClick="hideFaces('man')"; >Are they male?</a>
+			<a id="female" onClick="hideFaces('female')"; >Are they female?</a>
+			<a id="beard" onClick="hideFaces('beard')"; >Do they have a beard?</a>
+			<a id="shirt" onClick="hideFaces('shirt')"; >Are they wearing a shirt?</a>
+			<a id="glasses" onClick="hideFaces('glasses')"; >Are they wearing Glasses?</a>
+			<a id="bitch" onClick="hideFaces('bitch')"; >Do they look like a bitch?</a>
+		</div>
+	</div>
+	<div id="footer">
+		<p class="copyright">Designed by <a href="mailto:adam.lloyd@mycit.ie">Adam Lloyd</a> 2014</p>
+	</div>
+</div>
+</body>
+</html>
