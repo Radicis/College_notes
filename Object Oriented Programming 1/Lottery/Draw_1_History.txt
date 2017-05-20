@@ -1,0 +1,4 @@
+Employee ID: Adam
+Winning numbers: 1, 2, 3, 4
+Winning customers: 
+1 Adam Lloyd 0831389080 €2503.00

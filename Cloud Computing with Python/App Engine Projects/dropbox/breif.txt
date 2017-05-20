@@ -1,0 +1,19 @@
+
+
+1. Login page
+
+2. Main page
+	List all uploaded files
+		Thumbnail, timestamp, filename, format
+		Checkbox (to download or delete)s
+	
+	2(a) Upload a file to datastore
+	Browse Button
+		Navigate to local file
+		
+	Upload Button	
+		Save file to datastore
+		
+	2(b) Download a file		
+		Save to local drive
+	

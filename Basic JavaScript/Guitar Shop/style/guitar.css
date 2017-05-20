@@ -1,0 +1,431 @@
+ @import url(reset.css);
+
+/*---------- Global classes ----------*/
+
+.hidden{
+	display:none;
+	visibility:hidden;
+}
+
+.show{
+	display:inline;
+	visibility:visible;
+}
+
+.faded{
+	opacity:0.4;
+}
+
+.left{
+	float:left;
+}
+
+.right{
+	float:right;
+}
+
+.clear{
+	clear:both;
+}
+
+body{
+	color:#303030;	
+}
+
+a{
+	text-decoration:none;	
+}
+
+
+h1{
+	font-size:38px;
+}
+
+/*---------- Container ----------*/
+
+#container{
+	width:900px;
+	border:1px dotted #999;
+	margin:auto;	
+}
+
+/*---------- Header styling ----------*/
+
+header{
+	height:100px;
+	border-bottom:1px dotted #999;
+}
+
+#logo{
+	padding:20px;
+}
+
+#logo span{
+	font-style:italic;
+	color:#999;
+	margin-left:5px;
+}
+
+#logo h1{
+	
+}
+
+/*---------- Social Media Buttons ----------*/
+
+#social{
+	padding:10px;
+	margin-top:10px;
+}
+#social a{
+	width:48px;
+	height:48px;
+	float:left;
+	margin:5px;
+	opacity:0.6;
+}
+#social a:hover{
+	opacity:1;
+}
+#facebook{
+	background:url(../img/fb.png) no-repeat center;
+}
+#twitter{
+	background:url(../img/tw.png) no-repeat center;
+}
+
+#googleplus{
+	background:url(../img/gp.png) no-repeat center;
+}
+
+/*---------- Navigation ----------*/
+
+nav{	
+	list-style:none;
+	height:50px;
+	border-bottom:1px dotted #999;
+	padding-left:30px;
+	
+}
+
+nav li{
+	float:left;
+	text-align:center;
+	margin-top:16px;
+}
+
+nav a{
+	color:#333;
+	padding:10px;
+	width:60px;
+	height:18px;
+	font-size:18px;
+	background-color:#E6E6E6;
+	margin:5px;
+	border:1px dotted #999;
+}
+
+nav a:hover{
+	border:1px dashed #000;
+	color:#000;
+}
+
+/*---------- Main content section ----------*/
+
+#main{
+	overflow:auto;
+	padding:20px;
+	background:url(../img/bg_gradient.png) repeat-x top;
+}
+
+/*---------- Guitar options form  ----------*/
+
+#guitar-select fieldset{
+	width:105px;
+	padding:15px;
+}
+
+#guitar-select  .big-field{
+	width:250px;
+}
+
+#options{
+	width:280px;
+	margin-left:15px;
+}
+
+.buttonBox{	
+	width:120px;
+}
+
+#options  button{
+	width:90px;
+	border:1px solid #999;	
+	padding:3px;	
+	margin:-5px 0px 0px 20px;	
+	-webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    border-radius: 3px;
+	font-weight:bold;
+	cursor:pointer;
+	margin-top:5px;
+}
+
+#options button:hover{
+	border:1px solid #000;
+}
+/*---------- html5 color picker  ----------*/
+.colorpicker{
+	width:50px;
+	padding:2px;
+	vertical-align:middle;
+	-webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    border-radius: 5px;
+	border:1px solid #999;
+	cursor:pointer;
+}
+
+.colorpicker:hover{
+	border:1px solid #000;
+}
+
+.total{
+	line-height:60px;
+	height:60px;
+	color:#666666;
+}
+
+.total span{
+	font-size:20px;
+	font-weight:bold;
+	color:#303030;
+	padding:2px;
+}
+
+/*---------- Guitar images  ----------*/
+
+#guitar{
+	width:500px;
+	height:500px;
+	margin-left:40px;
+	border:1px solid #999;
+	-webkit-box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.75);
+	box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.75);
+	background:url(../img/body_fender.png) no-repeat;
+	background-color:#fff;
+}
+
+#g-head{
+	position:relative;
+	left:344px;
+	top:-148px;
+	width:109px;
+	height:120px;
+}
+
+#g-fretboard{
+	position:relative;
+	left:42px;
+	top:75px;
+	width:224px;
+	height:260px;
+}
+
+#g-pickup{
+	position:relative;
+	left:-248px;
+	top:145px;
+	width:89px;
+	height:96px;
+}
+
+#g-bridge{
+	position:relative;
+	left:-365px;
+	top:178px;
+	width:60px;
+	height:66px;
+}
+
+#want{
+	position:relative;
+	left:350px;
+	top:100px;
+	cursor:pointer;
+	width:136px;
+	height:135px;
+}
+
+
+/*---------- Order form  ----------*/
+
+#orderForm{
+
+}
+
+
+#orderForm .closeButton {
+	font-weight:bold;
+	float:right;
+	color:#999;
+	font-size:14px;
+}
+
+#orderForm .closeButton a{
+	border:1px dotted #999;
+	padding:2px;
+	color:#999;
+	cursor:pointer;
+}
+#orderForm .closeButton a:hover{
+	color:#999;
+	text-decoration:none;
+}
+
+#buyForm{
+	padding:20px;
+	width:400px;	
+	border:1px solid #999;
+	position:fixed;
+	margin-left:32%;
+	top:30px;
+	z-index:999;
+	-webkit-box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.75);
+	box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.75);
+	background:url(../img/bg_gradient.png) repeat-x bottom;
+	background-color:#fff;
+}
+
+fieldset{
+	border: 1px dotted #999;
+	padding:10px;
+}
+
+fieldset legend{
+	color:#999;
+	font-weight:bold;
+	padding: 5px;	
+}
+
+label{
+	clear:both;
+	width:125px;
+	text-align:right;
+	float:left;
+	margin-top:4px;
+}
+label small{
+	display:block;
+	font-size:12px;
+	color:#999;
+	position:relative;		
+}
+
+#buyForm  input{
+	width:200px;
+	border:1px solid #999;
+	margin:5px;
+	padding:6px;	
+	-webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    border-radius: 3px;
+}
+
+#showTotal{
+	border:1px solid #999;
+	padding:6px;
+	text-align:right;
+	font-weight:bold;
+	height:18px;
+}
+
+.formButton{
+	width:150px !important;
+	font-weight:bold;
+	margin:10px 0px 0px 0px !important;
+	cursor:pointer;
+}
+#buyForm input:hover{
+	border:1px solid #000;
+}
+
+.addressLines{
+	margin-left:125px;
+}
+
+form select{
+	border:1px solid #999;
+	width:215px;
+	margin:5px;
+	padding:6px;	
+	-webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    border-radius: 3px;
+	
+}
+
+#buyForm select:hover{
+	border:1px solid #000;
+}
+
+/* Invalid and valid classes for JS function to validate fields  */
+
+.isValid{
+	background-color:#D6F5D6;
+}
+
+.isInvalid{
+	background-color:#F0B2B2;
+}
+
+input:focus:required:valid{
+	background-color:#D6F5D6;
+}
+input:focus:required:invalid{
+	background-color:#F0B2B2;
+}
+select:focus:required:valid{
+	background-color:#D6F5D6;
+}
+
+select:focus:required:invalid{
+	background-color:#F0B2B2;
+}
+
+
+/* Input placeholder styling http://css-tricks.com/snippets/css/style-placeholder-text/ */
+::-webkit-input-placeholder {
+   color: #999;
+}
+
+:-moz-placeholder { 
+   color: #999;  
+}
+
+::-moz-placeholder {  
+   color: #999;  
+}
+
+:-ms-input-placeholder {  
+   color: #999;  
+}
+
+footer{
+	height:20px;
+	border-top:1px dotted #999;
+	padding:10px;
+}
+
+footer p{
+	float:right;
+	color:#999;
+}
+
+
+

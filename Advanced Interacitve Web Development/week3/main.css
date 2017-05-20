@@ -1,0 +1,44 @@
+body{
+	padding:0;
+	margin:0;	
+}
+
+#maincontent{
+	margin:auto;
+	margin-top:10px;
+	width:600px;
+	border:1px solid #999;
+	padding:10px;
+}
+
+#maincontent h1:first-child{
+	margin-top:0;
+}
+
+#cBar{
+	background-color:yellow;
+	position:fixed;
+	bottom:0;
+	display:block;
+	width:100%;
+	line-height:30px;
+	font-weight:bold;
+}
+
+#cBar p{
+	margin:0;
+	padding:0;
+	float:left;
+	margin-left:10px;
+}
+
+.close{
+	padding-right:10px;
+	float:right;
+	cursor:pointer;
+}
+
+.close:hover{
+	color:#444;
+}
+

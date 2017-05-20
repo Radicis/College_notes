@@ -1,0 +1,356 @@
+html {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    color: #222;
+    background-color: #eee;
+}
+body {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    text-align: center;
+}
+
+h1, h2{
+    padding: 0;
+    margin: 0;
+    color: #555;
+}
+
+/* Main Wrapper */
+
+#main {
+    display: inline-block;
+    margin: auto;
+    padding: 0 50px 10px 50px;
+    border: 1px solid #999;
+    text-align: center;
+    border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    /* from Colorzilla Gradient Generator */
+    
+    background: rgb(226, 226, 226);
+    /* Old browsers */
+    /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+    
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMTAwJSIgeDI9IjEwMCUiIHkyPSIwJSI+CiAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjZTJlMmUyIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iNTAlIiBzdG9wLWNvbG9yPSIjZGJkYmRiIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iNTElIiBzdG9wLWNvbG9yPSIjZDFkMWQxIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2ZlZmVmZSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
+    background: -moz-linear-gradient(45deg, rgba(226, 226, 226, 1) 0%, rgba(219, 219, 219, 1) 50%, rgba(209, 209, 209, 1) 51%, rgba(254, 254, 254, 1) 100%);
+    /* FF3.6+ */
+    
+    background: -webkit-gradient(linear, left bottom, right top, color-stop(0%, rgba(226, 226, 226, 1)), color-stop(50%, rgba(219, 219, 219, 1)), color-stop(51%, rgba(209, 209, 209, 1)), color-stop(100%, rgba(254, 254, 254, 1)));
+    /* Chrome,Safari4+ */
+    
+    background: -webkit-linear-gradient(45deg, rgba(226, 226, 226, 1) 0%, rgba(219, 219, 219, 1) 50%, rgba(209, 209, 209, 1) 51%, rgba(254, 254, 254, 1) 100%);
+    /* Chrome10+,Safari5.1+ */
+    
+    background: -o-linear-gradient(45deg, rgba(226, 226, 226, 1) 0%, rgba(219, 219, 219, 1) 50%, rgba(209, 209, 209, 1) 51%, rgba(254, 254, 254, 1) 100%);
+    /* Opera 11.10+ */
+    
+    background: -ms-linear-gradient(45deg, rgba(226, 226, 226, 1) 0%, rgba(219, 219, 219, 1) 50%, rgba(209, 209, 209, 1) 51%, rgba(254, 254, 254, 1) 100%);
+    /* IE10+ */
+    
+    background: linear-gradient(45deg, rgba(226, 226, 226, 1) 0%, rgba(219, 219, 219, 1) 50%, rgba(209, 209, 209, 1) 51%, rgba(254, 254, 254, 1) 100%);
+    /* W3C */
+    
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#e2e2e2', endColorstr='#fefefe', GradientType=1);
+    /* IE6-8 fallback on horizontal gradient */
+    
+    -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+/* Title/logo  */
+
+#brand {
+    position: relative;
+    font-weight: 300;
+    width: 300px;
+    margin: 20px auto;
+    color: #444;
+    border: 1px solid #999;
+    background: -moz-linear-gradient(top, rgba(255, 255, 255, 1), rgba(204, 204, 204, 1));
+    background: -webkit-linear-gradient(top, rgba(255, 255, 255, 1), rgba(204, 204, 204, 1));
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(204, 204, 204, 1));
+    border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+}
+
+/* Canvas styles  */
+
+#canvasWrapper {
+    display: inline-block;
+    position: relative;
+    background-color: #eee;
+    border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    padding: 10px;
+    border: 1px solid #666;
+    -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5), 0 0 40px rgba(0, 0, 0, 0.2) inset;
+    -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5), 0 0 40px rgba(0, 0, 0, 0.2) inset;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5), 0 0 40px rgba(0, 0, 0, 0.2) inset;
+}
+#myCanvas {
+    display: block;
+    background-color: #fefefe;
+    position: relative;
+    z-index: 99;
+    border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    border: 1px solid #999;
+}
+#myDrawCanvas {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    display: block;
+    cursor: crosshair;
+    z-index: 999;
+}
+/* Controls styling */
+
+#controls {
+    width: 400px;
+    margin: auto;
+    clear: left;
+    margin-top: 25px;
+    padding: 10px 20px 10px 20px;
+    background-color: #fefefe;
+    border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    border: 1px solid #666;
+    -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5), 0 0 30px rgba(0, 0, 0, 0.2) inset;
+    -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5), 0 0 30px rgba(0, 0, 0, 0.2) inset;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5), 0 0 30px rgba(0, 0, 0, 0.2) inset;
+}
+#controls p {
+    margin: 0;
+    font-size: 0.8em;
+}
+button {
+    font: inherit;
+    font-size: 0.9em;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    background: -moz-linear-gradient(top, rgba(255, 255, 255, 1), rgba(204, 204, 204, 1));
+    background: -webkit-linear-gradient(top, rgba(255, 255, 255, 1), rgba(204, 204, 204, 1));
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(204, 204, 204, 1));
+    margin: 5px;
+    padding: 2px;
+    border: 1px solid #999;
+    transition: all 0.3s ease;
+}
+button:hover {
+    border-color: #000;
+}
+button:active {
+    background: -moz-linear-gradient(top, rgba(204, 204, 204, 1), rgba(255, 255, 255, 1));
+    background: -webkit-linear-gradient(top, rgba(204, 204, 204, 1), rgba(255, 255, 255, 1));
+    background: linear-gradient(to bottom, rgba(204, 204, 204, 1), rgba(255, 255, 255, 1));
+    border-color: #000;
+}
+select {
+    font: inherit;
+    font-size: 0.9em;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    margin: 5px;
+    padding: 2px;
+    cursor: pointer;
+    border: 1px solid #444;
+}
+select:hover {
+    background-color: #ddd;
+}
+option {
+    background-color: #fefefe;
+}
+/* Modal value sliders styling  */
+
+#sliderWrap {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 99999;
+}
+#sliders {
+    width: 320px;
+    margin: auto;
+    position: relative;
+    top: 100px;
+    padding:10px 0 10px 0;
+    background-color: #fefefe;
+    border: 1px solid #ccc;
+    text-align: center;
+    color: #222;
+    border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    border: 1px solid #222;
+    background: -moz-linear-gradient(top, rgba(255, 255, 255, 1), rgba(204, 204, 204, 1));
+    background: -webkit-linear-gradient(top, rgba(255, 255, 255, 1), rgba(204, 204, 204, 1));
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(204, 204, 204, 1));
+    -webkit-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+#sliders h2{
+	margin:5px;
+}
+#sliders button {
+    font-size:1em;
+	padding: 0px 10px 0px 10px;
+}
+#sliders span {
+    color:#555;
+	position: relative;
+    top: -5px;
+}
+
+/* Snapshot roll */
+
+#roll {
+    margin: auto;
+    margin-top: 30px;
+    width: 500px;
+    height: 170px;
+    padding: 20px;
+    overflow: hidden;
+    overflow-x: auto;
+    white-space: nowrap;
+    border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    background-color: #fefefe;
+    border: 1px solid #666;
+}
+#roll > div {
+    padding: 2px;
+    position: relative;
+    display: inline-block;
+    margin-right: 10px;
+    border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+}
+#roll img {
+    border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    border: 1px solid #666;
+    background-color: #fefefe;
+    width: 250px;
+    height: 150px;
+    -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5), 0 0 40px rgba(0, 0, 0, 0.2) inset;
+    -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5), 0 0 40px rgba(0, 0, 0, 0.2) inset;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5), 0 0 40px rgba(0, 0, 0, 0.2) inset;
+	transition:all 0.2s ease-in;
+}
+#roll img:hover {
+    border-color: #000;
+    -webkit-box-shadow: 2px 2px 2px -1px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 2px 2px 2px -1px rgba(0, 0, 0, 0.75);
+    box-shadow: 2px 2px 2px -1px rgba(0, 0, 0, 0.75);
+}
+#roll .deleteButton {
+    border: 1px solid #222;
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    width: 23px;
+    border-radius: 20px 20px 20px 20px;
+    -moz-border-radius: 20px 20px 20px 20px;
+    -webkit-border-radius: 20px 20px 20px 20px;
+    background: -moz-linear-gradient(top, rgba(255, 255, 255, 1), rgba(204, 204, 204, 1));
+    background: -webkit-linear-gradient(top, rgba(255, 255, 255, 1), rgba(204, 204, 204, 1));
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(204, 204, 204, 1));
+    cursor: pointer;
+    color: #222;
+}
+#roll .deleteButton:hover {
+    border-color: #000;
+    -webkit-box-shadow: 2px 2px 2px -1px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 2px 2px 2px -1px rgba(0, 0, 0, 0.75);
+    box-shadow: 2px 2px 2px -1px rgba(0, 0, 0, 0.75);
+}
+#roll .deleteButton:active {
+    background: -moz-linear-gradient(top, rgba(204, 204, 204, 1), rgba(255, 255, 255, 1));
+    background: -webkit-linear-gradient(top, rgba(204, 204, 204, 1), rgba(255, 255, 255, 1));
+    background: linear-gradient(to bottom, rgba(204, 204, 204, 1), rgba(255, 255, 255, 1));
+}
+#roll .timestamp {
+    color: #ff0000;
+    font-size: 0.7em;
+    position: absolute;
+    top: -8px;
+    left: 10px;
+    padding: 0 5px 0 5px;
+}
+#nosnaps {
+    font-size: 1.2em;
+    font-weight: 700;
+}
+/* notification toast */
+
+#toast {
+    margin-top: 10px;
+    color: green;
+    height: 25px;
+}
+/* Image overlay */
+
+#lightbox {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    text-align: center;
+    z-index: 9999;
+}
+#img-container {
+    display: inline-block;
+    border: 1px solid #222;
+    padding: 20px;
+    margin-top: 100px;
+    -webkit-box-shadow: 3px 3px 3px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 3px 3px 3px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 3px 3px 3px 0px rgba(0, 0, 0, 0.75);
+    border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    background: -moz-linear-gradient(top, rgba(255, 255, 255, 1), rgba(204, 204, 204, 1));
+    background: -webkit-linear-gradient(top, rgba(255, 255, 255, 1), rgba(204, 204, 204, 1));
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(204, 204, 204, 1));
+}
+#img-container img {
+    border: 1px solid #999;
+    display: block;
+    background-color: #fefefe;
+}
+#img-container a {
+    padding-top: 5px;
+    display: block;
+    text-align: center;
+    color: #333;
+    font-weight: bold;
+}
+/* Copyright text */
+
+#copy {
+    font-size: 0.7em;
+}

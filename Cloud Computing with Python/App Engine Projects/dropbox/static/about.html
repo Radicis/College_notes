@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Project</title>
+	<link type="text/css" rel="stylesheet" href="static/style/main.css" />
+	
+<style>
+	
+@import "https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700";
+
+body, input, textarea, select, button, .normal {
+    color: #3d464d;
+    font-family: "Open Sans","lucida grande","Segoe UI",arial,verdana,"lucida sans unicode",tahoma,sans-serif;
+    font-size: 13px;
+    font-weight: normal;
+}
+body {
+    background-color: #fff;
+    margin: 0;
+    min-height: 100%;
+    padding: 0;
+}
+
+a {
+    color: #2895f1;
+    text-decoration: none;
+}
+.button{
+   border: 2px solid #ccc;
+   background: #65a9d7;
+   background: -webkit-gradient(linear, left top, left bottom, from(#2895f1), to(#65a9d7));
+   background: -webkit-linear-gradient(top, #2895f1, #65a9d7);
+   background: -moz-linear-gradient(top, #2895f1, #65a9d7);
+   background: -ms-linear-gradient(top, #2895f1, #65a9d7);
+   background: -o-linear-gradient(top, #2895f1, #65a9d7);
+   padding: 5px 10px;
+   -webkit-border-radius: 5px;
+   -moz-border-radius: 5px;
+   border-radius: 5px;
+   -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   box-shadow: rgba(0,0,0,1) 0 1px 0;
+   text-shadow: rgba(0,0,0,.4) 0 1px 0;
+   color: #fff;
+   text-decoration: none;
+   vertical-align: middle;
+   margin:10px;
+   cursor:pointer;
+   }
+.button:hover {
+   
+   border-style:groove;
+   background: #377fbb;
+   color: #fff;
+   }
+.button:active {
+   border-top-color: #1b435e;
+   background: #1b435e;
+   }
+
+table
+{
+    border-collapse: collapse;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+.clear-fix{
+	clear:both;
+}
+
+#wrapper{
+	width:80%;
+	margin:auto;
+	min-width:800px;
+}
+
+header{
+	margin-bottom:-20px;
+}
+
+.box-logo{
+	float:left;
+}
+
+.logo{
+	font-size:1.5em;
+	background:url(static/img/blue_dropbox.png) no-repeat left;
+	display:block;
+	padding-left:80px;
+	line-height:80px;
+}
+
+.logo span{
+	color:#ccc;
+}
+
+.user{
+	float:right;
+}
+
+.user span{
+	padding-left:5px;
+	padding-right:5px;
+	border-right:1px solid #ccc;
+}
+
+#main-wrapper{
+	
+	overflow:auto;
+}
+
+
+#side-menu{
+	float:left;
+	width:100px;
+}
+
+#side-menu ul{
+	margin-left:-30px;
+}
+
+#main-container{	
+	margin-left:100px;
+	border-left:1px solid #ccc;
+	padding-left:30px;
+	padding-top:10px;	
+}
+
+#file-box{
+	text-align:left;	
+}
+
+#file-box td{
+	padding:5px;
+	width:25%;	
+	border-bottom:1px solid #ccc;
+	border-right:1px solid #ccc;
+}
+
+#file-box .download{
+	text-align:center;
+}
+
+#file-box:first-child{
+	margin-bottom:20px;
+}
+
+#file-box tr:first-child{
+	border-bottom:2px solid #ccc;
+}
+
+#file-box tr td:first-child{
+	text-align:center;
+	width:60px;
+}
+
+#file-box td:nth-child(3){
+	width:10%;
+}
+
+#file-box tr td:last-child{
+	border-right:0;
+}
+
+
+#upload-form{
+	float:left;
+}
+
+#file-form .button{	
+	float:right;	
+}
+
+#file-form img{
+	width:50px;
+	height:50px;
+}
+
+.copy{
+	text-align:center;
+	color:#ccc;
+}
+	
+</style>
+	
+</head>
+
+<body>
+<div id="wrapper">
+<header>
+<div class="user">
+	Logged in as:<span><strong> {{ user }}</strong></span>
+	<a href={{ logout_url }} >Logout</a>
+</div>
+
+<div class="logo"><h2>Alloyd<span>Box</span></h2></div>
+</header>
+<div id="main-wrapper" class="clear-fix">
+<div id="side-menu">
+
+<ul>
+<a href="/"><li>My Files</li></a>
+<a href="/about"><li>About</li></a>
+<a href="{{ logout_url }}"><li>Logout</li></a>
+</ul>
+
+</div>	
+<div id="main-container">		
+<h2>About this project</h2>
+<p>
+ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tristique lectus elit, nec elementum massa ultrices ut. Nulla suscipit eget lacus ac commodo. Mauris sagittis auctor justo nec viverra. Ut ut venenatis urna, et ultrices velit. Pellentesque nisi mi, dignissim vitae molestie ac, ultrices ac libero. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam in pulvinar nulla, non rhoncus tortor. Aliquam quis tristique ex. Proin dignissim mi sed massa tempus, vel dignissim diam eleifend. Aliquam urna nisi, malesuada non rutrum in, tempor in dolor. Sed tincidunt accumsan ligula. Suspendisse luctus tortor ante, eu porttitor magna ullamcorper eu.
+</p><p>
+Phasellus blandit orci eget congue tempor. Suspendisse elementum, nisl sit amet tempor bibendum, ante elit viverra nibh, a iaculis ex enim vitae leo. Mauris vulputate imperdiet efficitur. Integer a nisl non dolor faucibus porttitor a non odio. Mauris quis turpis quis mauris posuere convallis ac vel augue. Curabitur luctus justo sed tellus dapibus consectetur. Suspendisse consectetur nisl ultrices odio facilisis dignissim. Nulla in tincidunt nulla. Curabitur euismod molestie quam, sollicitudin semper nunc lobortis nec. Vivamus et nisl vitae nisl laoreet vestibulum. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque pretium ipsum nibh, ac suscipit enim tincidunt placerat. Aenean tincidunt dolor a felis porta lacinia. 
+</p>
+
+</div><!-- End main container -->
+</div><!-- End main wrapper -->
+<p class="copy">Adam Lloyd 2014</p>
+</div> <!-- End wrapper -->
+</body>
+
+</html>

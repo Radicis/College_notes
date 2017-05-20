@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<head>
+	<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+<meta content="utf-8" http-equiv="encoding">
+	<link href = "style/main.css" rel='stylesheet' >
+	<script src="js/jquery-1.11.2.min.js"></script>
+</head>
+<body>
+
+<div id="wrapper">
+	<div id="left">
+		<button id="search">Find Images</button>
+		<h2>Tags</h2>
+		<div id="tags">
+			<div class="tag-container">
+				<input type="text" class="tag" id="tag1" />
+			</div>
+		</div>
+		<p><button id="plus">+</button></p>
+	</div>
+	<div id="image-container">
+		<div id="carousel">
+			<div class="control" id="control-left">
+				<span class="controlText">&lsaquo;</span>
+			</div>
+			<ul id="thumbnails"></ul>
+			<div class="control" id="control-right">
+				<span class="controlText">&rsaquo;</span>
+			</div>
+		</div>	
+		<div id="bigImage"><h3>No Results</h3></div>
+	</div>
+</div>
+<script src="js/main.js"></script>
+</body>
+</html>

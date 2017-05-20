@@ -1,0 +1,173 @@
+/*
+ * Web Fonts from fontspring.com
+ *
+ * All OpenType features and all extended glyphs have been removed.
+ * Fully installable fonts can be purchased at http://www.fontspring.com
+ *
+ * The fonts included in this stylesheet are subject to the End User License you purchased
+ * from Fontspring. The fonts are protected under domestic and international trademark and 
+ * copyright law. You are prohibited from modifying, reverse engineering, duplicating, or
+ * distributing this font software.
+ *
+ * (c) 2010-2014 Fontspring
+ *
+ * The fonts included are copyrighted by the vendor listed below.
+ *
+ * Vendor:      The Northern Block
+ * License URL: http://www.fontspring.com/licenses/northern-block/webfont
+ *
+ *
+ */
+
+@font-face {
+    font-family: 'corbertregular';
+    src: url('Webfonts/corbert_regular_macroman/Corbert-Regular-webfont.eot');
+    src: url('Webfonts/corbert_regular_macroman/Corbert-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Webfonts/corbert_regular_macroman/Corbert-Regular-webfont.woff2') format('woff2'),
+         url('Webfonts/corbert_regular_macroman/Corbert-Regular-webfont.woff') format('woff'),
+         url('Webfonts/corbert_regular_macroman/Corbert-Regular-webfont.ttf') format('truetype'),
+         url('Webfonts/corbert_regular_macroman/Corbert-Regular-webfont.svg#corbertregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+h1, h2, h3, h4{
+	font-family: 'corbertregular', Arial, sans-serif;
+	color:#121212;	
+}
+
+h2{
+	font-size:35px;
+	margin:-4px;
+}
+
+ul{
+	list-style:none;
+}
+
+a{
+	text-decoration:none;
+	color:#0f75f2;
+}
+
+a:hover{
+	text-decoration:underline;
+	color:#ff0000;
+}
+
+
+/* Fixed new icon  */
+#new{
+	background: url(../img/sprites.png) no-repeat top left;
+	background-position: -7px -478px; width: 128px; height: 128px;
+	position:fixed;
+	opacity:0.7;
+}
+
+#main{
+	width:850px;
+	margin:auto;
+}
+
+header{
+	height:200px;
+}
+
+header h1{
+	font-size:60px;
+	float:left;
+}
+
+
+/* Social media buttons */
+#social{
+	float:right;
+	margin-top:50px;
+	width:200px;
+}
+
+	#email a{
+		background: url(../img/sprites.png) no-repeat top left;
+		background-position: 0 -220px; width: 60px; height: 60px;
+		width:60px;
+		height:60px;	
+		float:right;
+	}
+
+	#facebook a{
+		background: url(../img/sprites.png) no-repeat top left;
+		background-position: 0 0; width: 60px; height: 60px;
+		width:60px;
+		height:60px;	
+		float:right;
+	}
+
+	#twitter a{
+		background: url(../img/sprites.png) no-repeat top left;
+		background-position: 0 -110px; width: 60px; height: 60px;
+		width:60px;
+		height:60px;	
+		float:right;
+	}
+
+	
+/* Gallery container+images */	
+#pictures{
+	width:800px;
+	overflow:auto;
+	background:url(../img/gradbar.png) repeat-x top;
+	padding:25px;
+}
+
+	#pictures li{
+		float:left;
+		height:225px;
+		padding:15px;
+		margin:35px;
+		background:#fff;
+		-webkit-box-shadow: 3px 3px 3px 1px rgba(0,0,0,0.75);
+		-moz-box-shadow: 3px 3px 3px 1px rgba(0,0,0,0.75);
+		box-shadow: 3px 3px 3px 1px rgba(0,0,0,0.75);
+	}
+
+	#pictures img{
+		width:300px;
+		height:225px;
+		padding:0px;
+		margin:0px;
+	}
+	
+	#pictures li  > div{
+		background: url(../img/sprites.png) no-repeat top left;
+		background-position: 10px -390px; 
+		background-color:#999;
+		height:30px;
+		top:-55px;	
+		padding:10px 10px 10px 40px;
+		position:relative;
+		opacity: 0.8;
+		font-family: 'corbertregular', Arial, sans-serif;
+		color:#fff;
+	}
+
+/* Text content */
+#text{
+	color:#303030;
+	font-size:18px;
+	padding:10px;
+}
+
+/* Back to top button */
+.back_to_top{
+	font-family: 'corbertregular', Arial, sans-serif;
+	font-size:14px;
+	background: url(../img/sprites.png) no-repeat top right;
+	background-position: 80px -331px; 
+	width:105px;
+	height:25px;	
+}
+
+
+
+
